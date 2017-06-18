@@ -3,8 +3,119 @@
 <head>
     <meta charset="UTF-8" />
     <title>hmoe</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/comment.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css" media="screen">
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+
+    }
+    </style>
 </head>
 <body>
-
+    <!-- 头部导航 -->
+    <div class="navigation">
+        <div class="logo">
+            <img src="img/index/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        <div class="cart">
+            <div><img src="img/icon/cart.png" alt=""></div>
+            <select name="select" >
+                <option value="my account">My Account</option>
+                <option value="my account">My Account</option>
+                <option value="my account">My Account</option>
+                <option value="my account">My Account</option>
+            </select>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 特色商品展示轮播 -->
+    <div class="feature">
+        <!-- 标题 -->
+        <div class="title">
+            <h4>Featured Items</h4>
+            <p>Let’s see featured items!</p>
+        </div>
+        <!-- swiper -->
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/index/p7.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/index/p8.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/index/p2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/index/p3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/index/p4.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 商品列表 -->
+    <div class="product">
+        <!-- 标题 -->
+        <div class="title">
+            <h4>Featured Items</h4>
+            <p>Let’s see featured items!</p>
+        </div>
+        <!-- 商品分类 -->
+        <div class="classify_title">
+            <ul>
+                <li>All</li>
+                <li>All</li>
+                <li>All</li>
+                <li>All</li>
+            </ul>
+        </div>
+        <div class="classify_wrap">
+            <ul>
+                <li>
+                    <div class="classify_item">
+                        <div class="item_img">
+                            <img src="img/index/p4.png" alt="" />
+                        </div>
+                        <div class="item_desc">
+                            <p>Jacket Of Prince</p>
+                            <p>Valo lagla kinen na kinla poth mapen</p>
+                            <p>$28</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 邮箱订阅 -->
+    <!-- 博文展示 -->
+    <!-- footer -->
 </body>
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
 </html>
