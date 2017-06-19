@@ -5,9 +5,6 @@
 * @Last Modified time: 2017-06-19 18:36:29
 */
 
-// img{
-//     width:100%;
-// }
 .navigation {
     background: rgb(6, 7, 9);
     width: 100%;
@@ -54,8 +51,8 @@
     text-align: center;
 }
 .cart >div>img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-top: 8px;
 }
 .cart>select {
@@ -70,12 +67,14 @@
 footer {
     width: 100%;
     background: rgb(241, 243, 248);
-    padding: 3% 0;
+    padding: 3% 0 0;
 }
 .footWrap {
     width: 80%;
     margin: 0 auto;
     display: flex;
+    border-bottom:1px solid #ccc;
+    padding-bottom: 1.5%;
 }
 .footWrap >dl {
     flex: 1;
@@ -116,4 +115,7 @@ footer {
     border-radius: 5px;
     color: #fff;
     background: rgb(54, 194, 255);
+}
+.icon{
+    padding: 1% 8.5%;
 }
