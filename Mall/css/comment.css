@@ -1,0 +1,119 @@
+/*
+* @Author: KunnyChen
+* @Date:   2017-06-19 11:52:41
+* @Last Modified by:   KunnyChen
+* @Last Modified time: 2017-06-19 18:36:29
+*/
+
+// img{
+//     width:100%;
+// }
+.navigation {
+    background: rgb(6, 7, 9);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+.logo {
+    flex: 1;
+    text-align: center;
+}
+.logo img {
+    height: 30px;
+    margin-top: 15px;
+}
+.nav {
+    flex: 2;
+    color: rgb(85, 95, 118);
+    font-size: 1.5em;
+    justify-content: space-around;
+    display: flex;
+}
+.nav > ul {
+    width: 100%;
+}
+.nav > ul>li {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+}
+.nav > ul>li>a:hover {
+    color: rgb(54, 194, 255);
+}
+.current {
+    color: rgb(54, 194, 255);
+}
+.cart {
+    flex: 1.5;
+    display: flex;
+    cursor: pointer;
+}
+.cart >div {
+    flex: 1;
+    text-align: center;
+}
+.cart >div>img {
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+.cart>select {
+    flex: 1;
+    height: 30px;
+    margin-top: 15px;
+    background: rgb(6, 7, 9);
+    color: rgb(85, 95, 118);
+    border: 1px solid rgb(85, 95, 118);
+    margin-right: 50%;
+}
+footer {
+    width: 100%;
+    background: rgb(241, 243, 248);
+    padding: 3% 0;
+}
+.footWrap {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.footWrap >dl {
+    flex: 1;
+    color: gray;
+    min-height: 175px;
+}
+.footWrap >dl>dt {
+    color: rgb(54, 194, 255);
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+.footWrap >dl>dd {
+    line-height: 2em;
+}
+.enter {
+    flex: 1;
+}
+.enter>p {
+    color: rgb(54, 194, 255);
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+.enter>form input {
+    background: rgb(241, 243, 248);
+    margin-bottom: 8%;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.submit {
+    width: 100%;
+}
+.submit button {
+    width: 100%;
+    border: 0;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(54, 194, 255);
+}
