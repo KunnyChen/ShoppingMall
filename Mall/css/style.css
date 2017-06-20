@@ -2,7 +2,7 @@
 * @Author: KunnyChen
 * @Date:   2017-06-19 11:52:41
 * @Last Modified by:   KunnyChen
-* @Last Modified time: 2017-06-20 17:13:36
+* @Last Modified time: 2017-06-20 18:35:33
 */
 
 .banner {
@@ -167,6 +167,7 @@
 }
 .blog_img img {
     width: 100%;
+    height: 100%;
 }
 .blog_content {
     display: flex;
@@ -176,18 +177,27 @@
     text-overflow: ellipsis;
     white-space: normal;
 }
+.right_content .blog_img{
+    height:60%;
+}
+.right_content .blog_text{
+     height: calc(100% - 60%);
+}
 .left_content {
     flex: 1;
     margin-right: 3%;
 }
 .right_content {
     flex: 1.8;
+    display: flex;
+    flex-flow: column;
 }
 .blog_text {
     padding: 3%;
     background: rgb(241, 243, 248);
     line-height: 2em;
     margin-top: -4px;
+    box-sizing: border-box;
 }
 .blog_text p:first-child {
     font-weight: 600;
@@ -203,14 +213,19 @@
     font-weight: 600;
 }
 .content_top {
-    margin-bottom: 3%;
+    flex:1;
+    height:50%;
+}
+.content_bottom{
+        flex:1;
+        height: calc(100% - 50%);
 }
 .right_content .blog_text p:nth-child(2) {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
 }
 .product_detail {
     width: 70%;

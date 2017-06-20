@@ -20,8 +20,8 @@ $(document).ready(function () {
         });
     });
     $(window).on('scroll', function () {
-        //console.log('back');
-        if ($(window).scrollTop() > $(window).height() * 0.6) {
+        console.log('back');
+        if ($(window).scrollTop() > $(window).height() * 0.4) {
             backButton.fadeIn();
             topText.show();
         } else {
