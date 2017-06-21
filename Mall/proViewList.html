@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>list</title>
+    <title>grid</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-     <!-- 通用navigation -->
+    <!-- 通用navigation -->
     <div class="navigation">
         <div class="logo">
             <img src="img/index/logo.png" alt="">
@@ -23,19 +23,196 @@
             <ul>
                 <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="index.html">Womens</a></li>
-                <li><a href="index.html">Mens</a></li>
-                <li><a href="index.html">Kids</a></li>
+                <li><a href="proViewGrid.html">Mens</a></li>
+                <li><a href="proViewList.html">Kids</a></li>
                 <li><a href="index.html">Blogs</a></li>
             </ul>
         </div>
-         <div class="cart">
-            <div><a href="cart.html"><img src="img/icon/cart.png" alt=""></a></div>
+        <div class="cart">
+            <div>
+                <a href="cart.html"><img src="img/icon/cart.png" alt=""></a>
+            </div>
             <select name="select">
                 <option value="0">My Account</option>
                 <option value="1">My Account</option>
                 <option value="2">My Account</option>
                 <option value="3">My Account</option>
-            </select />
+                </select />
+        </div>
+    </div>
+    <!-- tool -->
+    <div class="tool">HOME/WOMENS</div>
+    <!-- grid wrap -->
+    <div class="gridWrap">
+        <div class="grid_aside">
+            <!-- 01 -->
+            <div class="catagories cata">
+                <div class="cata_head">
+                    <span>CATAGORIES</span>
+                    <span>▼</span>
+                </div>
+                <div class="cata_item">
+                    <ul>
+                        <li>T-shirt</li>
+                        <li>Shirt</li>
+                        <li>Shoes</li>
+                        <li>Bags</li>
+                        <li>Jacket</li>
+                        <li>Sunglass</li>
+                        <li>Spray</li>
+                        <li>Cap</li>
+                        <li>Belt</li>
+                        <li>Jeans</li>
+                        <li>Shoes</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 02 -->
+            <div class="colors cata">
+                <div class="cata_head">
+                    <span>COLORS</span>
+                    <span>▼</span>
+                </div>
+                <div class="color_item">
+                    <ul>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                    <ul>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 03 -->
+            <div class="sizes cata">
+                <div class="cata_head">
+                    <span>SIZES</span>
+                    <span>▼</span>
+                </div>
+                <div class="size_item">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">XL</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">SL</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">M</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">L</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">XXL</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="size">XS</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 04 -->
+            <div class="price_range cata">
+                <div class="cata_head">
+                    <span>PRICE RANGE</span>
+                    <span>▼</span>
+                </div>
+                <div class="range_item">
+                    <input type="range" min="0" max="10" name="">
+                </div>
+            </div>
+        </div>
+        <div style="flex:.2;"></div>
+        <div class="grid_main">
+            <div class="main_top">
+                <!-- 01div -->
+                <div>
+                    <span>VIEW AS</span>
+                    <span><a href="proViewList.html"><img src="img/icon/list_active.png" width="35px"></a></span>
+                    <span><a href="proViewGrid.html"><img src="img/icon/grid.png" width="28px"></a></span>
+                </div>
+                <!-- 02div -->
+                <div>
+                    <span>SHORT BY</span>
+                    <select>
+                        <option value="0">name</option>
+                        <option value="1">money</option>
+                        <option value="3">color</option>
+                    </select>
+                    <span>SHOW ITEM</span>
+                    <select>
+                        <option value="0">59 items</option>
+                        <option value="1">59 items</option>
+                        <option value="3">59 items</option>
+                    </select>
+                </div>
+                <!-- 03div -->
+                <div>
+                    <input type="text" name="" placeholder="Search by items">
+                    <button>go</button>
+                </div>
+            </div>
+            <div class="main_wrap">
+                <div class="list_wrap">
+                    <ul>
+                        <li>
+                            <div class="listWrap"><img src="img/index/p3.png"></div>
+                            <div class="listDesc">
+                                <p>Jacket</p>
+                                <p>Dam kom thakta kina nen</p>
+                                <p>$28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit </p>
+                                <button> ADD TO CART</button>
+                            </div>
+                        </li>
+                        <!-- 02 -->
+                        <li>
+                            <div class="listWrap"><img src="img/index/p3.png"></div>
+                            <div class="listDesc">
+                                <p>Jacket</p>
+                                <p>Dam kom thakta kina nen</p>
+                                <p>$28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit </p>
+                                <button> ADD TO CART</button>
+                            </div>
+                        </li>
+                        <!-- 03 -->
+                        <li>
+                            <div class="listWrap"><img src="img/index/p3.png"></div>
+                            <div class="listDesc">
+                                <p>Jacket</p>
+                                <p>Dam kom thakta kina nen</p>
+                                <p>$28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit </p>
+                                <button> ADD TO CART</button>
+                            </div>
+                        </li>
+                        <!-- 04 -->
+                        <li>
+                            <div class="listWrap"><img src="img/index/p3.png"></div>
+                            <div class="listDesc">
+                                <p>Jacket</p>
+                                <p>Dam kom thakta kina nen</p>
+                                <p>$28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit </p>
+                                <button> ADD TO CART</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 通用 footer -->
@@ -98,8 +275,12 @@
             <a href="#"><img src="./img/icon/logo7.png" alt=""></a>
         </div>
     </footer>
-     <!--返回顶部-->
+    <!--返回顶部-->
     <button class="back-to-top"></button>
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
