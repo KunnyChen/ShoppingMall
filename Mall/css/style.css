@@ -2,7 +2,7 @@
 * @Author: KunnyChen
 * @Date:   2017-06-19 11:52:41
 * @Last Modified by:   KunnyChen
-* @Last Modified time: 2017-06-21 18:21:38
+* @Last Modified time: 2017-06-22 17:08:58
 */
 
 .banner {
@@ -481,7 +481,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10% auto;
+    margin: 15% auto 15% -8%;
 }
 .size_item>ul>li {
     flex: 1;
